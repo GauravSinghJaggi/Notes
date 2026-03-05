@@ -408,7 +408,11 @@ Answer: Use <ng-content></ng-content> in child template; parent places content b
 
 How to project multiple slots of content?
 
-Answer: Use named <ng-content select="..."> with selectors to route content into different slots.
+Answer: Use named 
+
+<ng-content select="..."> 
+
+  with selectors to route content into different slots.
 
 Can projected content access child component’s context?
 
@@ -436,7 +440,11 @@ Answer: Emit an event via @Output() and let parent handle; or pass a function re
 
 How to build a reusable modal component that accepts projected header/body/footer? (short idea)
 
-Answer: Child has <ng-content select="[modal-header]"></ng-content> etc.; parent uses <app-modal><div modal-header>...</div>...</app-modal>.
+Answer: Child has
+
+<ng-content select="[modal-header]"></ng-content> etc.; parent uses <app-modal><div modal-header>...</div>...</app-modal>.
+
+
 
 When using @ViewChildren, what type of value do you get and how to iterate?
 
